@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Jumbotron Template for Bootstrap</title>
+    <title>Програмирование на компонентах без фреймворка</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
@@ -29,12 +29,12 @@
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="sr-only">Меню</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#">Програмирование на компонентах без фреймворка</a>
         </div>
         <div class="navbar-collapse collapse">
           <form class="navbar-form navbar-right" role="form">
@@ -70,10 +70,12 @@
         </div>
       </div>
 	  @endforeach
-
+      
+	  {!! $paginator !!}
+	  
       <hr>
       <footer>
-        <p>&copy; Company 2014</p>
+        <p>&copy; Company 2018</p>
       </footer>
     </div> <!-- /container -->
 
