@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8b7f23ef60332229f154a96fdc7e8c60",
-    "content-hash": "9ad8063d1aa27225bff9e3e2ca6df821",
+    "hash": "a8489954940b0b3aa73011f7d04fc01f",
+    "content-hash": "c66bfdc46aa60e1809cfbaabfb99f181",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -619,6 +619,63 @@
                 "routing"
             ],
             "time": "2018-02-13 20:26:39"
+        },
+        {
+            "name": "php-curl-class/php-curl-class",
+            "version": "8.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-curl-class/php-curl-class.git",
+                "reference": "bdfe1fcca0c32562050c84e01e3a4cbdc31e22fd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-curl-class/php-curl-class/zipball/bdfe1fcca0c32562050c84e01e3a4cbdc31e22fd",
+                "reference": "bdfe1fcca0c32562050c84e01e3a4cbdc31e22fd",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*",
+                "squizlabs/php_codesniffer": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Curl\\": "src/Curl/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Unlicense"
+            ],
+            "authors": [
+                {
+                    "name": "Zach Borboa"
+                }
+            ],
+            "description": "PHP Curl Class makes it easy to send HTTP requests and integrate with web APIs.",
+            "homepage": "https://github.com/php-curl-class/php-curl-class",
+            "keywords": [
+                "api",
+                "class",
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "json",
+                "php",
+                "requests",
+                "rest",
+                "restful",
+                "web service",
+                "xml"
+            ],
+            "time": "2018-01-27 15:40:39"
         },
         {
             "name": "psr/container",

@@ -13,5 +13,14 @@ class MainController extends \Core\Controller
 		$showposts = array_slice($posts, ($page - 1) * $paginator->getitemsPerPage(), $paginator->getitemsPerPage());
 		echo $this->blade->render("index", ["message" => "Компоненты без фреймворков", "posts" => $showposts, "paginator" => $paginator]);
 	}
+	
+	public function curl()
+	{
+		$curl = $this->container->make(\Curl\Curl::class);
+		$curl->get('https://privatbank.ua/');
+		
+		
+		echo $this->blade->render("curl", ["message" => "Работа с cURL", "html" => $curl->response]);
+	}
 
 }
