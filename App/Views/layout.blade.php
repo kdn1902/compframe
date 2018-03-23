@@ -34,7 +34,9 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Програмирование на компонентах без фреймворка</a>
+          <a class="navbar-brand" href="/">База данных и пагинация</a>
+          <a class="navbar-brand" href="/currency">CURL валюта</a>
+          <a class="navbar-brand" href="/countries">CURL википедия</a>
         </div>
         <div class="navbar-collapse collapse">
           <form class="navbar-form navbar-right" role="form">
@@ -54,8 +56,6 @@
     <div class="jumbotron">
       <div class="container">
         <h1>{{ $message }}</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
       </div>
     </div>
     <div class="container">

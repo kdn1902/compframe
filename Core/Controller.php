@@ -3,13 +3,11 @@ namespace Core;
 
 class Controller{
 	
-	protected $container;
 	protected $blade;
 	
-	public function __construct($container)
+	public function __construct()
 	{
-		$this->container = $container;
-		$this->blade = $this->container->make('BladeInstance');
+		$this->blade = app()->make('BladeInstance');
 	}
 	
 }

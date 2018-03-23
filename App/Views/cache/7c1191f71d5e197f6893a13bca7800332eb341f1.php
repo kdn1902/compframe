@@ -1,5 +1,5 @@
 <?php $__env->startSection('content'); ?>
-    <div class="container">
+
       <!-- Example row of columns -->
 	  <?php $__currentLoopData = $posts; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $post): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
       <div class="row">

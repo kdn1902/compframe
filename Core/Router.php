@@ -4,17 +4,14 @@ namespace Core;
 class Router{
 	
 	private $dispatcher;
-	private $container;
 	
-	public function __construct($container, $routes)
+	public function __construct($routes)
 	{
-		$this->container = $container;
 		$this->dispatcher = \FastRoute\simpleDispatcher($routes);
 	}
 	
 	public function run()
 	{
-		//var_dump($this->container);
 		$httpMethod = $_SERVER['REQUEST_METHOD'];
 		$uri = $_SERVER['REQUEST_URI'];
 
@@ -37,7 +34,7 @@ class Router{
 				$handler = $routeInfo[1];
 				$vars = $routeInfo[2];
 				list($class, $method) = explode('/',$handler,2);
-				$controller = $this->container->makeWith('\App\Controllers\\'. $class, [ "container" => $this->container ]);
+				$controller = app()->make('\App\Controllers\\'. $class);
 				$controller->{$method}(...array_values($vars));
 				
 			break;

@@ -12,7 +12,8 @@
         "duncan3dc/blade": "^4.1",
         "illuminate/database": "^5.5",
         "jasongrimes/paginator": "^1.0",
-        "php-curl-class/php-curl-class": "^8.0"
+        "php-curl-class/php-curl-class": "^8.0",
+        "sunra/php-simple-html-dom-parser": "^1.5"
     },
 	"autoload": {
         "psr-4": {
